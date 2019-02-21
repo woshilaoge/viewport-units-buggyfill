@@ -8,7 +8,7 @@
 
 ````js
 require('viewport-units-buggyfill-w');.init({maxWidth: 640});
-```
+````
 
 ## License
 
