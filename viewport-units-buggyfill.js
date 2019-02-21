@@ -392,8 +392,12 @@
     }
 
     function getViewport() {
-      var vh = window.innerHeight;
-      var vw = window.innerWidth;
+      /**
+       * options.maxWidth 适配
+       * 
+       */
+      var vh = window.innerHeight ;
+      var vw = Math.min(options.maxWidth || 0, window.innerWidth)
 
       return {
         vh: vh,
